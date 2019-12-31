@@ -11,10 +11,11 @@ do
 done
 
 read -p "Do you want to swipe all datas on $ENTRY ?" -n 1 -r
+echo # move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     # Clear disk
-    echo sgdisk -og $DISK
+    sgdisk -og $DISK
 fi
 
 # Boot part
