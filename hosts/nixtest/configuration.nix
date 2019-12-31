@@ -6,18 +6,16 @@
       ./hardware-configuration.nix
     ];
 
-  # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "nixtest";
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # The global useDHCP flag is deprecated, therefore explicitly set to false here.
-  # Per-interface useDHCP will be mandatory in the future, so this generated config
-  # replicates the default behaviour.
   networking.useDHCP = false;
   networking.interfaces.ens3.useDHCP = true;
+
+  # ZFS 
+  networking.hostId = 2108ddb7
+  boot.supportedFilesystems = [ "zfs" ];
 
   # Select internationalisation properties.
   # i18n = {
@@ -26,14 +24,11 @@
   #   defaultLocale = "en_US.UTF-8";
   # };
 
-  # Set your time zone.
-  # time.timeZone = "Europe/Amsterdam";
+  time.timeZone = "Europe/Paris";
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  # environment.systemPackages = with pkgs; [
-  #   wget vim
-  # ];
+  environment.systemPackages = with pkgs; [
+    wget vim curl
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

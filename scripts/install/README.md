@@ -10,5 +10,6 @@ git clone https://github.com/eoli3n/nix-config
 ```
 Install zfs
 ```
-/root/nix-config/scripts/install/01-zfs.sh
+/root/nix-config/scripts/install/01-configure.sh
+/root/nix-config/scripts/install/02-install.sh
 ```

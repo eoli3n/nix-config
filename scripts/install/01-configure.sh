@@ -36,5 +36,15 @@ zfs create -o mountpoint=none rpool/root
 zfs create -o mountpoint=legacy rpool/root/nixos
 zfs create -o mountpoint=legacy rpool/home
 
+# Mount filesystems
+mount -t zfs rpool/root/nixos /mnt
+mkdir /mnt/home
+mount -t zfs rpool/home /mnt/home
+
+# Format EFI part
+mkfs.vfat $DISK-part3
+mkdir /mnt/boot
+mount $DISK-part3 /mnt/boot
+
 # Finish
 echo -e "All OK \e[32mGreen"
