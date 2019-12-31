@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # Set DISK
 select ENTRY in $(ls /dev/disk/by-id/);
 do
