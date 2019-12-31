@@ -19,5 +19,8 @@
   boot.supportedFilesystems = [ "zfs" ];
 
   system.stateVersion = "19.09";
+
+  # Enable qemu copy/paste
+  services.spice-vdagentd.enable = true;
 }
 
