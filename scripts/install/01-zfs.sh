@@ -29,7 +29,7 @@ sgdisk -n1:0:0 -t1:BF01 $DISK
 partprobe $DISK
 
 # Create ZFS pool
-zpool create -O mountpoint=none -R /mnt rpool $DISK-part1zpool create -O mountpoint=none -R /mnt rpool $DISK-part1
+zpool create -O mountpoint=none -R /mnt rpool $DISK-part1
 
 # ZFS filesystems
 zfs create -o mountpoint=none rpool/root
