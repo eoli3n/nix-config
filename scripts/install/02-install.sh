@@ -12,8 +12,8 @@ echo "Select host to setup :"
 WORKDIR="/mnt/etc/nixos/hosts/" ; cd $WORKDIR
 select HOST in $(ls);
 do
-    ln -s $HOST/configuration.nix ../
-    ln -s $HOST/hardware-configuration.nix ../
+    ln -s hosts/$HOST/configuration.nix ../
+    ln -s hosts/$HOST/hardware-configuration.nix ../
     break
 done
 
