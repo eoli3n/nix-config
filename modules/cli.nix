@@ -11,13 +11,16 @@
   # Install cli packages
   environment.systemPackages = with pkgs; [
     bc
-    curl
     file
-    fzf
-    git
+    curl
+    wget
     jq
     most
+    fzf
     rsync
-    wget
+    git
+    neovim
+    screen
+    hack-font
   ];
 }
