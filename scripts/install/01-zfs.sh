@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Set DISK
 select ENTRY in $(ls /dev/disk/by-id/);
