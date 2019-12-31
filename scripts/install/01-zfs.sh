@@ -16,6 +16,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
     # Clear disk
     sgdisk -og $DISK
+    partprobe $DISK
 fi
 
 # Boot part
