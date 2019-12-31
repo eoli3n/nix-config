@@ -13,7 +13,6 @@
       slurp
       wl-clipboard
       font-awesome
-      wofi
       rofi
     ];
   };
