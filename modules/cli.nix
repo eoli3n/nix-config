@@ -14,9 +14,10 @@
     curl
     file
     fzf
-    wget
+    git
     jq
     most
     rsync
+    wget
   ];
 }
