@@ -10,6 +10,13 @@ do
     break
 done
 
+read -p "Do you want to swipe all datas on $ENTRY ?" -n 1 -r
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    # Clear disk
+    echo sgdisk -og $DISK
+fi
+
 # Boot part
 sgdisk -a1 -n2:34:2047 -t2:EF02 $DISK
 # EFI part
