@@ -14,7 +14,7 @@
   networking.interfaces.ens3.useDHCP = true;
 
   # ZFS 
-  networking.hostId = 2108ddb7;
+  networking.hostId = "2108ddb7";
   boot.supportedFilesystems = [ "zfs" ];
 
   # Select internationalisation properties.
