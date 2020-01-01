@@ -5,6 +5,7 @@
   services.connman.enable = true;
   services.connman.networkInterfaceBlacklist = [ "vmnet" "vboxnet" "virbr" "ifb" "docker" "veth" "eth" "wlan" "vnet" ];
   services.connman.extraConfig = "AllowHostnameUpdates=false\nPreferredTechnologies=ethernet,wifi";
+  services.connman.enableVPN = true;
 
   # Sound configuration
   sound.enable = true;
@@ -23,6 +24,8 @@
       ./includes/sway.nix
       # Install packages
       ./includes/desktop-packages.nix
+      # Install openvpn configuration
+      ./includes/openvpn.nix
     ];
 
   # Install adb
