@@ -5,17 +5,20 @@
   sound.enable = true;
   hardware.pulseaudio.enable = true;
 
-  imports =
-    [
-      ./includes/sway.nix
-    ];
-
   # Allow unfree
   nixpkgs.config.allowUnfree = true;
 
   # Enable flatpak
   services.flatpak.enable = true;
   xdg.portal.enable = true;
+
+  # Install adb
+  programs.adb.enable = true;
+
+  imports =
+    [
+      ./includes/sway.nix
+    ];
 
   # Install desktop packages
   environment.systemPackages = with pkgs; [
@@ -53,7 +56,6 @@
     equilux-theme
     paper-icon-theme
   # Phone
-    adb
     adb-sync
   ];
 

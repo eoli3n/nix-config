@@ -20,7 +20,7 @@
   # User account
   users.users.user = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel", "adb-users" ];
   };
 
   # Auto upgrades
