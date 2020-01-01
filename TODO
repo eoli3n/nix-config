@@ -3,5 +3,7 @@
 - molotov on flatpak
 - borgbackup home datas
 - copy/paste spice
-- qemu et virt-manager
-- podman
+- qemu 
+- podman zfs
+- tiny IRC client
+- vpn conf

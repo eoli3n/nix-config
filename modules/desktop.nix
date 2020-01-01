@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  # Networking connman
+  networking.connman.enable = true;
+  networking.connman.networkInterfaceBlacklist = [ "vmnet" "vboxnet" "virbr" "ifb" "docker" "veth" "eth" "wlan" "vnet" ];
+
   # Sound configuration
   sound.enable = true;
   hardware.pulseaudio.enable = true;

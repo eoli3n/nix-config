@@ -12,6 +12,8 @@
     audacity
   # Video
     mpv
+  # Photos
+    gnome-photos
   # Games
     minecraft
     #mindustry #nopackage
