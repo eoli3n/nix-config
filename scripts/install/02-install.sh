@@ -17,6 +17,11 @@ do
     break
 done
 
+# Set unstable channel
+nix-channel --add https://nixos.org/channels/nixos-unstable nixos
+nix-channel --update
+
+# Install
 nixos-install
 
 # Finish
