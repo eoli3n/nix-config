@@ -21,7 +21,7 @@
     connman
     connman-gtk
     termite
-    #variety #unstable package
+    variety
     weechat
     equilux-theme
     paper-icon-theme

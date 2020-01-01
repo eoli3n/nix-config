@@ -14,6 +14,7 @@
       wl-clipboard
       font-awesome
       rofi
+      wofi
     ];
   };
 
