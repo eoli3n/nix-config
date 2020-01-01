@@ -5,58 +5,22 @@
   sound.enable = true;
   hardware.pulseaudio.enable = true;
 
-  # Allow unfree
+  # Allow unfree 
   nixpkgs.config.allowUnfree = true;
 
   # Enable flatpak
   services.flatpak.enable = true;
   xdg.portal.enable = true;
 
-  # Install adb
-  programs.adb.enable = true;
-
   imports =
     [
+      # Install DE
       ./includes/sway.nix
+      # Install packages
+      ./includes/desktop-packages.nix
     ];
 
-  # Install desktop packages
-  environment.systemPackages = with pkgs; [
-  # Basic
-    firefox-bin
-    google-chrome
-    libreoffice
-  # Music
-    spotify
-    playerctl
-    audacity
-  # Video
-    mpv
-  # Games
-    minecraft
-    #mindustry #nopackage
-  # Network
-    transmission
-    connman
-    connman-gtk
-    weechat
-    #tiny #nopackage
-  # Work
-    podman
-    vscodium
-    x2goclient
-    vagrant
-    virt-manager
-  # Term
-    termite
-    asciinema
-  # GTK
-    variety
-    lxappearance
-    equilux-theme
-    paper-icon-theme
-  # Phone
-    adb-sync
-  ];
-
+  # Install adb
+  programs.adb.enable = true;
+  services.udev.packages = [ pkgs.android-udev-rules ];
 }
