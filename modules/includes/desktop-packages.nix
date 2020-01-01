@@ -6,6 +6,7 @@
     firefox-bin
     google-chrome
     libreoffice
+    evince
   # Music
     spotify
     playerctl
@@ -19,7 +20,6 @@
     #mindustry #nopackage
   # Network
     transmission
-    connman
     connman-gtk
     weechat
     #tiny #nopackage
