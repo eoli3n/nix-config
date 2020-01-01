@@ -30,7 +30,7 @@
   # Video
     mpv
   # Games
-    minecraft-launcher
+    minecraft
     #mindustry #nopackage
   # Network
     transmission
