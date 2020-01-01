@@ -28,7 +28,7 @@
 
   # Enable sshd
   services.sshd.enable = true;
-  services.openssh.permitRootLogin = yes;
+  services.openssh.permitRootLogin = "yes";
   users.users.root.openssh.authorizedKeys.keyFiles = [ "../../keys/id_rsa.pub" ] ;
 }
 
