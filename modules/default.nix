@@ -1,17 +1,19 @@
 { config, pkgs, ... }:
 
 {
+  # Install fonts
   fonts.fonts = with pkgs; [
     hack-font
     font-awesome
   ];
 
-
+  # Font and keymap
   console = {
     font = "Hack";
     keyMap = "fr";
   };
 
+  # Locale and timezone
   i18n.defaultLocale = "fr_FR.UTF-8";
   time.timeZone = "Europe/Paris";
 
@@ -21,7 +23,10 @@
     extraGroups = [ "wheel" ];
   };
 
+  # Auto upgrades
+  system.autoUpgrade.enable = true;
+
   imports = [
-    ./cli.nix   
+    ./includes/cli.nix   
   ];
 }

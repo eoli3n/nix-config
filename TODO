@@ -1,3 +1,7 @@
 - zfs on luks
-- secret passwords
-- home manager
+- minwaita workaround theme for waybar
+- molotov on flatpak
+- borgbackup home datas
+- copy/paste spice
+- qemu et virt-manager
+- podman
