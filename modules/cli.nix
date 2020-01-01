@@ -22,5 +22,6 @@
     neovim
     screen
     hack-font
+    htop
   ];
 }
