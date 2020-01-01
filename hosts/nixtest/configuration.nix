@@ -22,5 +22,8 @@
 
   # Enable qemu copy/paste
   services.spice-vdagentd.enable = true;
+
+  # https://github.com/NixOS/nix/issues/421
+  boot.kernel.sysctl."vm.overcommit_memory" = "1";
 }
 
