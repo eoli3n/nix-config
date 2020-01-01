@@ -1,18 +1,18 @@
 { config, pkgs, ... }:
 
 {
-
   fonts.fonts = with pkgs; [
     hack-font
     font-awesome
   ];
 
-  i18n = {
-    consoleFont = "Hack";
-    consoleKeyMap = "fr";
-    defaultLocale = "fr_FR.UTF-8";
-  };
 
+  console = {
+    font = "Hack";
+    keyMap = "fr";
+  }
+
+  i18n.defaultLocale = "fr_FR.UTF-8";
   time.timeZone = "Europe/Paris";
 
   # User account
