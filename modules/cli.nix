@@ -21,7 +21,6 @@
     git
     neovim
     screen
-    hack-font
     htop
     ansible
   ];

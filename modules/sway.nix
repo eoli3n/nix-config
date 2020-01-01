@@ -12,7 +12,6 @@
       grim
       slurp
       wl-clipboard
-      font-awesome
       rofi
       wofi
     ];

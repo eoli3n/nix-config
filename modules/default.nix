@@ -1,6 +1,12 @@
 { config, pkgs, ... }:
 
 {
+
+  fonts.fonts = with pkgs; [
+    hack-font
+    awesome-font
+  ];
+
   i18n = {
     consoleFont = "Hack";
     consoleKeyMap = "fr";
