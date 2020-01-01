@@ -25,5 +25,10 @@
 
   # https://github.com/NixOS/nix/issues/421
   boot.kernel.sysctl."vm.overcommit_memory" = "1";
+
+  # Enable sshd
+  services.sshd.enable = true;
+  services.openssh.permitRootLogin = yes;
+  users.users.root.openssh.authorizedKeys.keyFiles = ../../keys/id_rsa.pub
 }
 
