@@ -4,7 +4,7 @@
 
   fonts.fonts = with pkgs; [
     hack-font
-    awesome-font
+    font-awesome
   ];
 
   i18n = {
