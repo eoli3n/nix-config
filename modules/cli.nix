@@ -23,5 +23,6 @@
     screen
     hack-font
     htop
+    ansible
   ];
 }
