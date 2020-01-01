@@ -21,8 +21,8 @@
   users.users.user = {
     isNormalUser = true;
     extraGroups = [
-      wheel
-      adb-users
+      "wheel"
+      "adb-users"
     ];
   };
 
