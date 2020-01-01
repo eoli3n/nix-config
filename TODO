@@ -1,3 +1,4 @@
+test:
 - zfs on luks
 - minwaita workaround theme for waybar
 - molotov on flatpak
@@ -5,7 +6,9 @@
 - copy/paste spice
 - qemu 
 - podman zfs
-- tiny IRC client
-- vpn conf
+- "tiny" IRC client
 - GTK theme
+
+prod:
+- manually copy et edit vpn conf to /root/openvpn/{client,auth}.conf
 - enable wifi
