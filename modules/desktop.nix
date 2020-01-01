@@ -15,6 +15,7 @@
 
   # Enable flatpak
   services.flatpak.enable = true;
+  xdg.portal.enable = true;
 
   # Install desktop packages
   environment.systemPackages = with pkgs; [
