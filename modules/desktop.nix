@@ -9,6 +9,8 @@
   # Sound configuration
   sound.enable = true;
   hardware.pulseaudio.enable = true;
+  # https://github.com/Alexays/Waybar/issues/499
+  nixpkgs.config.pulseaudio = true;
 
   # Allow unfree 
   nixpkgs.config.allowUnfree = true;
