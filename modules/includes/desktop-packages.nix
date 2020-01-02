@@ -8,6 +8,7 @@
     libreoffice
     evince
   # Music
+    pavucontrol
     spotify
     playerctl
     audacity

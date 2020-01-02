@@ -8,6 +8,7 @@ test:
 - podman zfs
 - "tiny" IRC client
 - GTK theme
+- waybar to 0.9.0 request
 
 prod:
 - manually copy et edit vpn conf to /root/openvpn/{client,auth}.conf
