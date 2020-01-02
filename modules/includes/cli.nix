@@ -8,6 +8,9 @@
   users.extraUsers.root.shell = pkgs.fish;
   users.extraUsers.user.shell = pkgs.fish;
 
+  # Start SSH agent
+  programs.ssh.startAgent = true;
+
   # Install cli packages
   environment.systemPackages = with pkgs; [
     bc
