@@ -14,8 +14,7 @@
       wl-clipboard
       rofi
       wofi
-      theme-vertex # workaround to waybar height
-      adapta-gtk-theme
+      adapta-gtk-theme # workaround to waybar height
     ];
   };
 

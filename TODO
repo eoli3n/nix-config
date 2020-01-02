@@ -1,6 +1,5 @@
 test:
 - zfs on luks
-- minwaita workaround theme for waybar
 - molotov on flatpak
 - borgbackup home datas
 - copy/paste spice
