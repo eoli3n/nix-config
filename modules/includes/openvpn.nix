@@ -5,6 +5,7 @@
     um = {
       config = '' config /root/openvpn/client.conf '';
       updateResolvConf = true;
+      autoStart = false;
     };
   };
 }
