@@ -15,6 +15,7 @@
       rofi
       wofi
       theme-vertex # workaround to waybar height
+      adapta-gtk-theme
     ];
   };
 
