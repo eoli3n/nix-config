@@ -14,6 +14,7 @@
       wl-clipboard
       rofi
       wofi
+      theme-vertex # workaround to waybar height
     ];
   };
 
