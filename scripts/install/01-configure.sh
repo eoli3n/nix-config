@@ -15,9 +15,7 @@ echo # move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     # Clear disk
-    dd if=/dev/zero of=$DISK bs=512 count=1
-    # Inform kernel
-    partprobe $DISK
+    sgdisk -Z $DISK
 fi
 
 # EFI part
