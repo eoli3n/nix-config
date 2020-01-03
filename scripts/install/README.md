@@ -8,7 +8,7 @@ nix-channel --update
 nix-env -iA nixos.git
 git clone https://github.com/eoli3n/nix-config
 ```
-Configure on ZFS and install
+Configure ZFS over LUKS and install
 ```
 /root/nix-config/scripts/install/01-configure.sh
 /root/nix-config/scripts/install/02-install.sh
