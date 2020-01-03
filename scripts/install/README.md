@@ -3,7 +3,7 @@ Boot NixOS iso
 Install git and clone project
 ```
 sudo loadkeys fr
-sudo su -
+sudo -i
 nix-channel --update
 nix-env -iA nixos.git
 git clone https://github.com/eoli3n/nix-config
