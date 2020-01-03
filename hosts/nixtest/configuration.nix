@@ -20,7 +20,7 @@
    boot.initrd.luks.devices = [
     {
       name = "root";
-      device = "/dev/disk/by-uuid/06e7d974-9549-4be1-8ef2-f013efad727e";
+      device = "/dev/disk/by-id/dm-name-luksroot";
       allowDiscards = true;
     }
   ];

@@ -64,5 +64,5 @@ mkdir /mnt/boot
 mount $DISK-part1 /mnt/boot
 
 # Finish
-echo "Don't forget to define boot.initrd.luks.devices.device in configuration.nix"
+print "Don't forget to define boot.initrd.luks.devices.device in configuration.nix"
 echo -e "\e[32mAll OK"
