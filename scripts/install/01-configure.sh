@@ -28,6 +28,7 @@ sgdisk -n2:0:0 -t2:8309 $DISK
 partprobe $DISK
 
 # Format boot part
+sleep 1
 mkfs.vfat $DISK-part1
 
 # Luks root
