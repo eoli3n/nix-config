@@ -31,6 +31,7 @@ partprobe $DISK
 mkfs.vfat $DISK-part1
 
 # Luks root
+echo "Configure LUKS..."
 cryptsetup luksFormat $DISK-part2
 cryptsetup luksOpen $DISK-part2 luksroot
 LUKS="/dev/mapper/luksroot"
