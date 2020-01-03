@@ -16,6 +16,8 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
     # Clear disk
     dd if=/dev/zero of=$DISK bs=512 count=1
+    # Inform kernel
+    partprobe $DISK
 fi
 
 # EFI part
