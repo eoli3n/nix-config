@@ -3,7 +3,7 @@
 set -e
 
 print () {
-    echo "\033[1m>$1"
+    echo -e "\033[1m>$1"
 }
 
 # Set DISK
