@@ -8,8 +8,5 @@ test:
 - GTK theme
 - waybar to 0.9.0 request
 
-- using zfs on luks makes boot process not viewing generations
-  try zfs built in encryption
-
 prod:
 - enable wifi
