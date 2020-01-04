@@ -17,12 +17,14 @@ WORKDIR="/mnt/etc/nixos/hosts/" ; cd $WORKDIR
 select HOST in $(ls);
 do
     ln -s hosts/$HOST/configuration.nix ../
+
+    # Generate configuration-hardware.nix
+    print "Generate hardware configuration"
+    nixos-generate-config --root /mnt --show-hardware-config >> /mnt/etc/nixos/hardware-configuration.nix
+    ln -s /mnt/etc/nixos/hardware-configuration.nix /mnt/etc/nixos/hosts/$HOST/
     break
 done
 
-# Generate configuration-hardware.nix
-print "Generate hardware configuration"
-nixos-generate-config --root /mnt --show-hardware-config >> /mnt/etc/nixos/hardware-configuration.nix
 
 # Set unstable channel
 nix-channel --add https://nixos.org/channels/nixos-unstable nixos
