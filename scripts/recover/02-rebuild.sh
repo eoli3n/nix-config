@@ -13,8 +13,9 @@ git pull
 
 # Rebuild nix-config
 print "Rebuild nix-config"
-nixos-enter /mnt
-nixos-rebuild boot
+nix-channel --add https://nixos.org/channels/nixos-unstable nixos
+nix-channel --update
+nixos-install
 
 # Finish
 echo -e "\e[32mAll OK"
