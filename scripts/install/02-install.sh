@@ -11,26 +11,18 @@ print () {
 rm -Rf /mnt/etc/nixos 2>/dev/null
 git clone https://github.com/eoli3n/nix-config /mnt/etc/nixos
 
-# Generate configuration-hardware.nix
-print "Generate hardware configuration"
-mkdir -p /mnt/tmp
-nixos-generate-config --root /mnt --dir /tmp
-
 # Select host configuration
 print "Select host to setup :"
 WORKDIR="/mnt/etc/nixos/hosts/" ; cd $WORKDIR
 select HOST in $(ls);
 do
     ln -s hosts/$HOST/configuration.nix ../
-
-    # Up hardware configuration on github
-    print "Up generated hardware-configuration.nix on github"
-    cp /mnt/tmp/hardware-configuration.nix $HOST/
-    git add $HOST
-    git commit -am "Updated $HOST hardware-configuration.nix"
-    git push
     break
 done
+
+# Generate configuration-hardware.nix
+print "Generate hardware configuration"
+nixos-generate-config --show-hardware-config >> /mnt/etc/nixos/hardware-configuration.nix
 
 # Set unstable channel
 nix-channel --add https://nixos.org/channels/nixos-unstable nixos
