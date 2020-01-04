@@ -34,6 +34,7 @@
   boot.supportedFilesystems = [ "zfs" ];
   networking.hostId = "2108ddb7";
   services.zfs.autoScrub.enable = true;
+  boot.zfs.requestEncryptionCredentials;
 
   # Enable qemu copy/paste
   services.spice-vdagentd.enable = true;

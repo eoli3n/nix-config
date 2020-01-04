@@ -25,10 +25,12 @@ fi
 # EFI part
 print "Creating EFI part"
 sgdisk -n1:1M:+512M -t1:EF00 $DISK
+EFI=$DISK-part1
 
-# LUKS part
-print "Creating LUKS part"
-sgdisk -n2:0:0 -t2:8309 $DISK
+# ZFS part
+print "Creating ZFS part"
+sgdisk -n2:0:0 -t2:bf01 $DISK
+ZFS=$DISK-part2
 
 # Inform kernel
 partprobe $DISK
@@ -36,32 +38,27 @@ partprobe $DISK
 # Format boot part
 sleep 1
 print "Format EFI part"
-mkfs.vfat $DISK-part1
-
-# Luks root
-print "Create LUKS"
-cryptsetup luksFormat $DISK-part2
-print "Open LUKS"
-cryptsetup luksOpen $DISK-part2 luksroot
-LUKS="/dev/mapper/luksroot"
+mkfs.vfat $EFI
 
 # Create ZFS pool
 print "Create ZFS pool"
-zpool create -O mountpoint=none -R /mnt rpool $LUKS
+print "Passphrase for encryption ?"
+read PASS
+zpool create -o ashift=12 -R /mnt -O mountpoint=none -O encryption=aes-256-gcm -O keyformat=$PASS zroot $ZFS
 
 # ZFS filesystems
 print "Create ZFS volumes"
-zfs create -o mountpoint=none rpool/root
-zfs create -o mountpoint=legacy rpool/root/nixos
-zfs create -o mountpoint=legacy rpool/home
+zfs create -o mountpoint=none zroot/root
+zfs create -o mountpoint=legacy zroot/root/nixos
+zfs create -o mountpoint=legacy zroot/home
 
 # Mount filesystems
 print "Mount parts"
-mount -t zfs rpool/root/nixos /mnt
+mount -t zfs zroot/root/nixos /mnt
 mkdir /mnt/home
-mount -t zfs rpool/home /mnt/home
+mount -t zfs zroot/home /mnt/home
 mkdir /mnt/boot
-mount $DISK-part1 /mnt/boot
+mount $EFI /mnt/boot
 
 # Finish
 print "Don't forget to define boot.initrd.luks.devices.device in configuration.nix"
