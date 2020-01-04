@@ -60,5 +60,4 @@ mkdir /mnt/boot
 mount $EFI /mnt/boot
 
 # Finish
-print "Don't forget to define boot.initrd.luks.devices.device in configuration.nix"
 echo -e "\e[32mAll OK"
