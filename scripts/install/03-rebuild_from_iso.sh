@@ -23,11 +23,10 @@ zpool import -a
 zfs load-key -a
 
 # Mount filesystems
-print "Mount parts"
+print "Mount root part"
 mount -t zfs zroot/root/nixos /mnt
-mkdir /mnt/home
+print "Mount parts"
 mount -t zfs zroot/home /mnt/home
-mkdir /mnt/boot
 mount $EFI /mnt/boot
 
 # Update git nix-config
