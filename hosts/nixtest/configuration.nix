@@ -12,6 +12,9 @@
       #../../modules/laptop.nix
     ];
 
+  # SSD
+  #fileSystems."/".options = [ "noatime" "nodiratime" "discard" ];
+
   # Boot
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
