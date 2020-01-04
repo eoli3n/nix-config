@@ -19,6 +19,7 @@ echo # move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     # Clear disk
+    wipefs -af $DISK
     sgdisk -Z $DISK
 fi
 
