@@ -16,15 +16,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Luks
-   boot.initrd.luks.devices = [
-    {
-      name = "root";
-      device = "/dev/disk/by-id/dm-name-luksroot";
-      allowDiscards = true;
-    }
-  ];
-
   # Networking
   networking.hostName = "nixtest";
   networking.useDHCP = false;
