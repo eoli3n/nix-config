@@ -22,7 +22,7 @@ done
 
 # Generate configuration-hardware.nix
 print "Generate hardware configuration"
-nixos-generate-config --show-hardware-config >> /mnt/etc/nixos/hardware-configuration.nix
+nixos-generate-config --root /mnt --show-hardware-config >> /mnt/etc/nixos/hardware-configuration.nix
 
 # Set unstable channel
 nix-channel --add https://nixos.org/channels/nixos-unstable nixos
