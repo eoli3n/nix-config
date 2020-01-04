@@ -13,8 +13,8 @@ git clone https://github.com/eoli3n/nix-config /mnt/etc/nixos
 
 # Generate configuration-hardware.nix
 print "Generate hardware configuration"
-nixos-generate-config --dir /tmp
-
+mkdir -p /mnt/tmp
+nixos-generate-config --root /mnt --dir /tmp
 
 # Select host configuration
 print "Select host to setup :"
@@ -25,7 +25,7 @@ do
 
     # Up hardware configuration on github
     print "Up generated hardware-configuration.nix on github"
-    cp /tmp/hardware-configuration.nix /mnt/etc/nixos/hosts/$HOST/
+    cp /mnt/tmp/hardware-configuration.nix /mnt/etc/nixos/hosts/$HOST/
     git add hosts/$HOST
     git commit -am "Updated $HOST hardware-configuration.nix"
     git push
