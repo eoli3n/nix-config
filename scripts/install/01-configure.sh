@@ -14,7 +14,7 @@ do
     break
 done
 
-read -p "> Do you want to swipe all datas on $ENTRY ?" -n 1 -r
+read -p "> Do you want to wipe all datas on $ENTRY ?" -n 1 -r
 echo # move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
