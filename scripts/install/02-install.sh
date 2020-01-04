@@ -20,8 +20,7 @@ do
 
     # Generate configuration-hardware.nix
     print "Generate hardware configuration"
-    nixos-generate-config --root /mnt --show-hardware-config > /mnt/etc/nixos/hardware-configuration.nix
-    ln -s /mnt/etc/nixos/hardware-configuration.nix /mnt/etc/nixos/hosts/$HOST/
+    nixos-generate-config --root /mnt --show-hardware-config > /mnt/etc/nixos/hosts/$HOST/hardware-configuration.nix
     break
 done
 
