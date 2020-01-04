@@ -25,8 +25,8 @@ do
 
     # Up hardware configuration on github
     print "Up generated hardware-configuration.nix on github"
-    cp /mnt/tmp/hardware-configuration.nix /mnt/etc/nixos/hosts/$HOST/
-    git add hosts/$HOST
+    cp /mnt/tmp/hardware-configuration.nix $HOST/
+    git add $HOST
     git commit -am "Updated $HOST hardware-configuration.nix"
     git push
     break
