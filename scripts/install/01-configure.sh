@@ -20,7 +20,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
     # Clear disk
     wipefs -af $DISK
-    sgdisk -Z $DISK
+    sgdisk -Zo $DISK
 fi
 
 # EFI part
