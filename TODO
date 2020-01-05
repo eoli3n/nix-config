@@ -1,3 +1,7 @@
+tofix:
+- integer 243 error
+- glitched display
+
 test:
 - custom search domain when openvpn connect
 - borgbackup home datas
