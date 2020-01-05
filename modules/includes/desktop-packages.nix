@@ -33,6 +33,8 @@
   # Term
     termite
     asciinema
+  # Tool
+    borgbackup
   # GTK
     variety
     lxappearance
