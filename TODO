@@ -7,6 +7,7 @@ test:
 - "tiny" IRC client
 - GTK theme
 - waybar to 0.9.0 request
+- check zfs documentation: pool size
 
 prod:
 - enable wifi
