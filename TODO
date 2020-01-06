@@ -7,7 +7,6 @@ test:
 - copy/paste spice
 - podman zfs
 - GTK theme
-- check zfs documentation
 
 later:
 - qemu
