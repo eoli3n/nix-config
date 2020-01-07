@@ -6,9 +6,6 @@
   services.connman.networkInterfaceBlacklist = [ "vmnet" "vboxnet" "virbr" "ifb" "docker" "veth" "eth" "wlan" "vnet" ];
   services.connman.extraConfig = "AllowHostnameUpdates=false\nPreferredTechnologies=ethernet,wifi";
 
-  # Dconf for GTK
-  programs.dconf.enable = true;
-
   # Sound configuration
   sound.enable = true;
   hardware.pulseaudio.enable = true;
