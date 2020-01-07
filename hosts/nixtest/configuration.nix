@@ -22,7 +22,7 @@
   # Networking
   networking.hostName = "nixtest";
   networking.useDHCP = false;
-  networking.interfaces.ens3.useDHCP = true;
+  networking.wireless.enable = true;
 
   # ZFS
   boot.supportedFilesystems = [ "zfs" ];
