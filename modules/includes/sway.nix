@@ -17,6 +17,7 @@
       rofi
       wofi
       adapta-gtk-theme # workaround to waybar height
+      glib # gsettings for gtk config
     ];
   };
 
