@@ -16,8 +16,10 @@
     mpv
   # Photos
     gnome-photos
+    koloupaint
   # Games
     minecraft
+    hedgewars
     #mindustry #nopackage
   # Network
     transmission
@@ -26,10 +28,12 @@
     #tiny #nopackage
   # Work
     podman
-    vscodium
-    x2goclient
+    rdesktop
+    texlive.combined.scheme-small
     vagrant
     virt-manager
+    vscodium
+    x2goclient
   # Term
     termite
     asciinema
