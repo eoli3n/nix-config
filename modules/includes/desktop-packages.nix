@@ -14,8 +14,9 @@
     audacity
   # Video
     mpv
-  # Photos
+  # Image
     gnome-photos
+    imagemagick
     koloupaint
   # Games
     minecraft
@@ -26,13 +27,15 @@
     connman-gtk
     weechat
     #tiny #nopackage
+  # Dev
+    pastel
+    vscodium
   # Work
     podman
     rdesktop
     texlive.combined.scheme-small
     vagrant
     virt-manager
-    vscodium
     x2goclient
   # Term
     termite

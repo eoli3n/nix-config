@@ -34,7 +34,6 @@
     tree
     ansible
     ranger
-    pastel
     speedtest-cli
   ];
 }
