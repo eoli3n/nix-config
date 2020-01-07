@@ -15,22 +15,29 @@
     audacity
   # Video
     mpv
-  # Photos
+  # Image
     gnome-photos
+    imagemagick
+    kolourpaint
   # Games
     minecraft
+    hedgewars
     #mindustry #nopackage
   # Network
     transmission
     connman-gtk
     weechat
     #tiny #nopackage
+  # Dev
+    pastel
+    vscodium
   # Work
     podman
-    vscodium
-    x2goclient
+    rdesktop
+    texlive.combined.scheme-small
     vagrant
     virt-manager
+    x2goclient
   # Term
     termite
     asciinema
