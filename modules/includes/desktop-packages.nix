@@ -7,6 +7,7 @@
     google-chrome
     libreoffice
     evince
+    nautilus
   # Music
     pavucontrol
     spotify
