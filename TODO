@@ -5,11 +5,8 @@ tofix:
 test:
 - molotov on flatpak
 - copy/paste spice
-- podman zfs
-- GTK theme
-
-later:
-- qemu
+- podman and docker zfs
+- qemu test
 
 prod:
 - enable wifi
