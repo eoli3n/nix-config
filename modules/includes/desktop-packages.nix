@@ -17,7 +17,7 @@
   # Image
     gnome-photos
     imagemagick
-    koloupaint
+    kolourpaint
   # Games
     minecraft
     hedgewars
