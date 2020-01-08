@@ -7,6 +7,7 @@
     google-chrome
     libreoffice
     evince
+    xfce.thunar
   # Music
     pavucontrol
     spotify

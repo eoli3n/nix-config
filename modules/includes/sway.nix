@@ -2,6 +2,8 @@
 
   programs.sway = {
     enable = true;
+    wrapperFeatures.gtk = true;
+
     extraPackages = with pkgs; [
       swaylock
       swayidle
@@ -15,6 +17,7 @@
       rofi
       wofi
       adapta-gtk-theme # workaround to waybar height
+      glib # gsettings for gtk config
     ];
   };
 
