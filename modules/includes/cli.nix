@@ -5,10 +5,12 @@
   programs.fish.enable = true;
 
   # Enable libvirt
+  boot.kernelModules = [ "kvm-intel" ];
   virtualisation.libvirtd.enable = true;
 
-  # Enable docker
+  # Enable docker and podman
   virtualisation.docker.enable = true;
+  virtualisation.podman.enable = true;
 
   # Root shell
   users.extraUsers.root.shell = pkgs.fish;
@@ -35,5 +37,7 @@
     ansible
     ranger
     speedtest-cli
+    docker-compose
+    podman-compose
   ];
 }

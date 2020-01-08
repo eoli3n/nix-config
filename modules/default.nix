@@ -20,7 +20,7 @@
   # User account
   users.users.user = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "adb-users" "audio" "libvirtd" ];
+    extraGroups = [ "wheel" "adb-users" "audio" "libvirtd" "docker" ];
   };
 
   # Auto upgrades

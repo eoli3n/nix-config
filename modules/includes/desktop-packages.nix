@@ -32,7 +32,6 @@
     pastel
     vscodium
   # Work
-    podman
     rdesktop
     texlive.combined.scheme-small
     vagrant
