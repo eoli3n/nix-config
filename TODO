@@ -7,6 +7,7 @@ test:
 - copy/paste spice
 - podman and docker zfs
 - qemu test
+- bridge pour qemu
 - systemd suspend then hibernate delay and test
 
 prod:
