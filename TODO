@@ -9,6 +9,9 @@ test:
 - qemu test
 - bridge pour qemu
 - systemd suspend then hibernate delay and test
+- zfs snapshot /var or /var/lib
+- backup /var ?
+- separate /var
 
 prod:
 - enable wifi
