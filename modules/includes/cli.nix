@@ -10,7 +10,6 @@
 
   # Enable docker and podman
   virtualisation.docker.enable = true;
-  virtualisation.podman.enable = true;
 
   # Root shell
   users.extraUsers.root.shell = pkgs.fish;
@@ -38,6 +37,7 @@
     ranger
     speedtest-cli
     docker-compose
+    podman
     podman-compose
   ];
 }
