@@ -31,13 +31,23 @@
     git
     neovim
     screen
-    htop
     tree
+    htop
+    nmap
+    nethogs
+    netcat-gnu
+    tcpdump
+    whois
     ansible
     ranger
+    ncdu
+    asciinema
     speedtest-cli
     docker-compose
     podman
     podman-compose
+    rclone
+    neofetch
+    unzip
   ];
 }

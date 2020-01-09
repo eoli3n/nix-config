@@ -16,6 +16,7 @@
   # Video
     mpv
   # Image
+    feh
     gnome-photos
     imagemagick
     kolourpaint
@@ -25,6 +26,7 @@
     #mindustry #nopackage
   # Network
     transmission
+    webtorrent_desktop
     connman-gtk
     weechat
     #tiny #nopackage
