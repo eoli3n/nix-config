@@ -2,6 +2,5 @@
 
 {
   # Enable wifi
-  #networking.wireless.enable = true;
-  networking.wireless.iwd.enable = true;
+  services.connman.wifi.backend = "iwd";
 }
