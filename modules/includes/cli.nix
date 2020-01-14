@@ -49,5 +49,6 @@
     rclone
     neofetch
     unzip
+    ix
   ];
 }
