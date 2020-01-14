@@ -12,9 +12,6 @@
       ../../modules/laptop.nix
     ];
 
-  # SSD
-  fileSystems."/".options = [ "noatime" "nodiratime" "discard" ];
-
   # Intel microcode
   hardware.cpu.intel.updateMicrocode = true;
 
