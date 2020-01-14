@@ -50,6 +50,7 @@ print "Create ZFS volumes"
 zfs create -o mountpoint=none zroot/root
 zfs create -o mountpoint=legacy zroot/root/nixos
 zfs create -o mountpoint=legacy zroot/home
+zfs create -o mountpoint=legacy zroot/var
 
 # Mount filesystems
 print "Mount parts"
@@ -58,6 +59,8 @@ mkdir /mnt/home
 mount -t zfs zroot/home /mnt/home
 mkdir /mnt/boot
 mount $EFI /mnt/boot
+mkdir /mnt/var
+mount -t zfs zroot/var /mnt/var
 
 # Finish
 echo -e "\e[32mAll OK"
