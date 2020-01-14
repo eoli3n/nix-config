@@ -9,7 +9,7 @@
       ./hardware-configuration.nix
       ../../modules/default.nix
       ../../modules/desktop.nix
-      #../../modules/laptop.nix
+      ../../modules/laptop.nix
     ];
 
   # SSD
