@@ -13,7 +13,10 @@
     ];
 
   # SSD
-  #fileSystems."/".options = [ "noatime" "nodiratime" "discard" ];
+  fileSystems."/".options = [ "noatime" "nodiratime" "discard" ];
+
+  # Intel microcode
+  hardware.cpu.intel.updateMicrocode = true;
 
   # Boot
   boot.loader.systemd-boot.enable = true;
@@ -22,7 +25,6 @@
   # Networking
   networking.hostName = "nixtest";
   networking.useDHCP = false;
-  networking.wireless.enable = true;
 
   # ZFS
   boot.supportedFilesystems = [ "zfs" ];
