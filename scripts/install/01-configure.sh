@@ -43,7 +43,7 @@ mkfs.vfat $EFI
 
 # Create ZFS pool
 print "Create ZFS pool"
-zpool create -f -o atime=off -o acltype=posixacl -o xattr=sa -o ashift=12 -R /mnt -O mountpoint=none -O encryption=aes-256-gcm -O keyformat=passphrase -O keylocation=prompt zroot $ZFS
+zpool create -f -o acltype=posixacl -o xattr=sa -o ashift=12 -R /mnt -O mountpoint=none -O encryption=aes-256-gcm -O keyformat=passphrase -O keylocation=prompt zroot $ZFS
 
 # ZFS filesystems
 print "Create ZFS volumes"
