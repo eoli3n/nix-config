@@ -5,8 +5,7 @@
     wrapperFeatures.gtk = true;
 
     extraPackages = with pkgs; [
-      #swaylock-fancy
-      swaylock
+      swaylock-fancy
       swayidle
       xwayland
       waybar
