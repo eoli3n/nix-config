@@ -5,6 +5,26 @@
   users.users.user.subUidRanges = [{ startUid = 100000; count = 65536; }];
   users.users.user.subGidRanges = [{ startGid = 100000; count = 65536; }];
 
+  environment.etc."containers/policy.json" = {
+    mode="0644";
+    text=''
+      {
+        "default": [
+          {
+            "type": "insecureAcceptAnything"
+          }
+        ],
+        "transports":
+          {
+            "docker-daemon":
+              {
+                "": [{"type":"insecureAcceptAnything"}]
+              }
+          }
+      }
+    '';
+  };
+
   environment.etc."containers/registries.conf" = {
     mode="0644";
     text=''
