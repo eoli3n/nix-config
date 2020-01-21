@@ -23,7 +23,7 @@
   # Games
     minecraft
     hedgewars
-    #mindustry #nopackage
+    mindustry
   # Network
     transmission
     webtorrent_desktop
