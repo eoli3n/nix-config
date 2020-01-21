@@ -44,8 +44,6 @@
     asciinema
     speedtest-cli
     docker-compose
-    podman
-    podman-compose
     rclone
     neofetch
     unzip

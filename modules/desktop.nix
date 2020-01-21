@@ -26,6 +26,8 @@
       ./includes/desktop-packages.nix
       # Install openvpn configuration
       ./includes/openvpn.nix
+      # Install podman configuration
+      ./includes/podman.nix
     ];
 
   # Install adb
