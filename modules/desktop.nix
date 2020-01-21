@@ -5,6 +5,7 @@
   services.connman.enable = true;
   services.connman.networkInterfaceBlacklist = [ "vmnet" "vboxnet" "virbr" "ifb" "docker" "veth" "eth" "wlan" "vnet" ];
   services.connman.extraConfig = "AllowHostnameUpdates=false\nPreferredTechnologies=ethernet,wifi";
+  services.connman.wifi.backend = "iwd";
 
   # Sound configuration
   sound.enable = true;
