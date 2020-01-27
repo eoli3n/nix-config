@@ -48,5 +48,6 @@
     neofetch
     unzip
     ix
+    stress
   ];
 }
