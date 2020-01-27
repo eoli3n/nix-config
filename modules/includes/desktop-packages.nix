@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
   # Basic
     firefox-bin
+    flashplayer
     google-chrome
     libreoffice
     evince
@@ -29,7 +30,7 @@
     webtorrent_desktop
     connman-gtk
     weechat
-    #tiny #nopackage
+    #tiny
   # Dev
     pastel
     vscodium
