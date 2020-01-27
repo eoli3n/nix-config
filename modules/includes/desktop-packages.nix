@@ -4,7 +4,6 @@
   environment.systemPackages = with pkgs; [
   # Basic
     firefox-bin
-    flashplayer
     google-chrome
     libreoffice
     evince

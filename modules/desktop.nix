@@ -14,6 +14,7 @@
 
   # Allow unfree 
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.firefox.enableAdobeFlash = true;
 
   # Enable flatpak
   services.flatpak.enable = true;
