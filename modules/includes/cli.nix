@@ -49,5 +49,6 @@
     unzip
     ix
     stress
+    bind
   ];
 }
