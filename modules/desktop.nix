@@ -20,6 +20,9 @@
   services.flatpak.enable = true;
   xdg.portal.enable = true;
 
+  # Enable anbox
+  virtualisation.anbox.enable = true;
+
   imports =
     [
       # Install DE
