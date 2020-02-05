@@ -44,6 +44,7 @@
     asciinema
   # Tool
     borgbackup
+    appimage-run
   # GTK
     variety
     lxappearance
