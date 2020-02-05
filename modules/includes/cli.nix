@@ -39,7 +39,7 @@
     tcpdump
     whois
     ansible
-    ranger
+    lf
     ncdu
     asciinema
     speedtest-cli
