@@ -45,6 +45,7 @@
   # Tool
     borgbackup
     appimage-run
+    genymotion # android vm
   # GTK
     variety
     lxappearance
