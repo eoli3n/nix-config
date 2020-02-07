@@ -39,13 +39,14 @@
     vagrant
     virt-manager
     x2goclient
+    virtualbox
+    genymotion # android vm
   # Term
     termite
     asciinema
   # Tool
     borgbackup
     appimage-run
-    genymotion # android vm
   # GTK
     variety
     lxappearance
