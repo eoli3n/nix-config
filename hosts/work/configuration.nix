@@ -28,5 +28,9 @@
   networking.hostId = "2020abab";
   services.zfs.autoScrub.enable = true;
   boot.zfs.requestEncryptionCredentials = true;
+
+  # Printers
+  services.printing.enable = true;
+  services.printing.drivers = [ pkgs.hplip ];
 }
 
