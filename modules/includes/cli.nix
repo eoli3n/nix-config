@@ -50,5 +50,6 @@
     ix
     stress
     bind
+    cifs-utils
   ];
 }
