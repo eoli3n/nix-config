@@ -24,6 +24,7 @@
     minecraft
     hedgewars
     mindustry
+    steam
   # Network
     transmission
     webtorrent_desktop
