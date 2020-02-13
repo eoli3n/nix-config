@@ -23,6 +23,11 @@
   # Enable anbox
   virtualisation.anbox.enable = true;
 
+  # Configure steam
+  hardware.opengl.driSupport32Bit = true;
+  hardware.pulseaudio.support32Bit = true;
+  hardware.steam-hardware.enable = true;
+
   imports =
     [
       # Install DE
