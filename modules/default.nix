@@ -26,6 +26,10 @@
   # Auto upgrades
   system.autoUpgrade.enable = true;
 
+  # Remove old generations
+  nix.gc.automatic = true;
+  nix.gc.options = "--delete-older-than 8d";
+
   imports = [
     ./includes/cli.nix   
   ];
