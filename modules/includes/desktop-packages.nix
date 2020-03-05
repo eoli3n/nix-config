@@ -22,7 +22,7 @@
     kolourpaint
   # Games
     minecraft
-    #hedgewars # BUG
+    hedgewars
     mindustry
     steam
   # Network
