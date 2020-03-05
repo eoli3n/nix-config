@@ -18,6 +18,7 @@
       wofi
       adapta-gtk-theme # workaround to waybar height
       glib # gsettings for gtk config
+      # wdisplays # arandr like for wayland https://github.com/NixOS/nixpkgs/issues/81825
     ];
   };
 
