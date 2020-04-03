@@ -15,6 +15,7 @@
     audacity
   # Video
     mpv
+    zoom-us
   # Image
     feh
     gnome-photos
