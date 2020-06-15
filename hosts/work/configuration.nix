@@ -32,5 +32,6 @@
   # Printers
   services.printing.enable = true;
   services.printing.drivers = [ pkgs.hplip ];
+  environment.systemPackages = with pkgs; [ cups-toshiba-estudio ];
 }
 
